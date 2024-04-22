@@ -1,10 +1,16 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+
 public class UserSystem {
+    static ArrayList<User> userList = new ArrayList<>();
+    static {
+        userList.add(new User("koukau", "ppyy541880", "koukau77@gmail.com", "07020345635"));
+
+    }
     public static void startUserSystem() {
         Scanner sc = new Scanner(System.in);
-        ArrayList<User> userList = new ArrayList<>();
         loopUser: while (true){
             System.out.println("Welcome to Student Management System");
             System.out.println("Please choose 1: Log in 2: Register 3: Forget password");
